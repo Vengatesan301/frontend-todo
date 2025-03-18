@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Login Box */
+.login-box {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;  /* Increased width */
+    max-width: 90%; /* Keeps it responsive */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.heading {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Input Group */
+.input-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.input-group label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Input Field */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Password Field */
+.password-group {
+    position: relative;
+}
+
+/* Password Wrapper (To contain input & icon) */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* Add space for the eye icon */
+}
+
+/* Eye Icon (Inside Input Field) */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #5a67d8, #6b46c1);
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 1.2rem;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-link a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 2rem;
+    }
+    
+    .heading {
+        font-size: 22px;
+    }
+    
+    .login-btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
